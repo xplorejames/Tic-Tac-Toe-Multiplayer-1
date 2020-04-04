@@ -304,7 +304,7 @@ io.on('connection', function(socket){
 //Server configuration stuff
 
 //Tries to find variable for openshift ip, if nothing then loads to localhost
-var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "0.0.0.0";
 
 //Same as above, but with port
 //If you want to load on localhost onto a different port, change 4000 to whatever port you please
