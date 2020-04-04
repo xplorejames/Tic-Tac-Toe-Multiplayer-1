@@ -308,7 +308,7 @@ var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "0.0.0.0";
 
 //Same as above, but with port
 //If you want to load on localhost onto a different port, change 4000 to whatever port you please
-var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+var port = process.env.PORT || 3000;
 
 http.listen(port, ipaddress, function(){
 	console.log('Running on Openshift Server')
